@@ -1,2 +1,0 @@
-# SNL
-SNL Compiler
