@@ -1,0 +1,47 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: first - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP329.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"../../obj/" /Fp"../../obj/first.pch" /YX /Fo"../../obj/" /Fd"../../obj/" /FD /GZ /c 
+"E:\VC program\NIUXR_SNL\src\IO\File.cpp"
+"E:\VC program\NIUXR_SNL\src\first\main.cpp"
+"E:\VC program\NIUXR_SNL\src\MyString\MyString.cpp"
+"E:\VC program\NIUXR_SNL\src\IO\StdinReader.cpp"
+"E:\VC program\NIUXR_SNL\src\snl\Token.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP329.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP32A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"../../bin/first.pdb" /debug /machine:I386 /out:"../../bin/first.exe" /pdbtype:sept 
+"\VC program\NIUXR_SNL\obj\File.obj"
+"\VC program\NIUXR_SNL\obj\main.obj"
+"\VC program\NIUXR_SNL\obj\MyString.obj"
+"\VC program\NIUXR_SNL\obj\StdinReader.obj"
+"\VC program\NIUXR_SNL\obj\Token.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP32A.tmp"
+<h3>Output Window</h3>
+Compiling...
+File.cpp
+main.cpp
+MyString.cpp
+StdinReader.cpp
+Token.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"../../bin/first.bsc"  "\VC program\NIUXR_SNL\obj\File.sbr" "\VC program\NIUXR_SNL\obj\main.sbr" "\VC program\NIUXR_SNL\obj\MyString.sbr" "\VC program\NIUXR_SNL\obj\StdinReader.sbr" "\VC program\NIUXR_SNL\obj\Token.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+first.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
