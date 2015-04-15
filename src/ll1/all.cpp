@@ -11,7 +11,9 @@ static int lineno = 1;
 extern std::vector<Token> tokenList;
 
 Token Match(TokenType);
+
 bool NextIs(TokenType);
+
 Token current("");
 
 std::stack<SNL_Node **> yfsz;  //Óï·¨Ê÷
@@ -33,7 +35,6 @@ public:
 std::stack<TNT> fhz;    
 
 std::stack<SNL_Node *> czfz;
-
 std::stack<SNL_Node *> czsz;
 
 

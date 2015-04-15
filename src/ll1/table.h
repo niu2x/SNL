@@ -7,4 +7,5 @@
 
 extern std::map<TokenType, int> table[100];
 void init_table();
+
 #endif

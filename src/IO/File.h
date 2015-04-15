@@ -1,6 +1,7 @@
 #ifndef __myFile__
 #define __myFile__
 #include "../MyString/MyString.h"
+
 class File
 {
 	MyString filename;

@@ -4,10 +4,12 @@
 #include "../IO/StdinReader.h"
 #include "../IO/file.h"
 #include "../general/error.h"
+
 #define gTypeTable (TypeTable::g_type_table)       //全局类型表
 #define gIdTable (IdTable::g_id_table)				//全局的符号表
+
 #define BOOLTYPE -0601						//布尔类型，用以区别 一个表达式 的结果是布尔值
-#define niuxr_magic -0601 //这是个bug,但也将就
+#define niuxr_magic -0601					//这是个bug,但也将就
 
 std::vector<int> starts;                //为了区分作用域的起始位置
 std::vector<MyString> rows;				//语法树的每一行
@@ -311,9 +313,17 @@ void ProcDecK(int depth)
 	{
 		i ++;
 	}
-
 	proc.param_num = i;
-	gIdTable.push_back(proc);
+
+	if(existInCurrentLevel(proc.name) == 0)
+	{
+		gIdTable.push_back(proc);
+	}
+	else
+	{
+		error("重复的过程声明 %s.", proc.name.c_str());
+	}
+	
 	LEVEL ++;
 	offset[LEVEL] = 0;
 	while(rows[0].lstrip().start_with("DecK"))
@@ -841,6 +851,6 @@ int main()
 			error();
 		}
 	}
-	output();
+	//output();
 	return 0;
 }

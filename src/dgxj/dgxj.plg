@@ -6,13 +6,13 @@
 --------------------Configuration: dgxj - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP138.tmp" with contents
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP55.tmp" with contents
 [
 /nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"../../obj/" /Fp"../../obj/dgxj.pch" /YX /Fo"../../obj/" /Fd"../../obj/" /FD /GZ /c 
-"E:\VC program\NIUXR_SNL\src\dgxj\all.cpp"
+"E:\VC program\NIUXR_SNL\src\dgxj\main.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP138.tmp" 
-Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP139.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP55.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP56.tmp" with contents
 [
 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"../../bin/dgxj.pdb" /debug /machine:I386 /out:"../../bin/dgxj.exe" /pdbtype:sept 
 "\VC program\NIUXR_SNL\obj\all.obj"
@@ -25,24 +25,12 @@ kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32
 "\VC program\NIUXR_SNL\obj\Token.obj"
 "\VC program\NIUXR_SNL\obj\StdinReader.obj"
 ]
-Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP139.tmp"
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP56.tmp"
 <h3>Output Window</h3>
 Compiling...
-all.cpp
-e:\vc program\niuxr_snl\src\dgxj\all.cpp(159) : warning C4715: 'TypeDecMore' : not all control paths return a value
-e:\vc program\niuxr_snl\src\dgxj\all.cpp(309) : warning C4715: 'FieldDecMore' : not all control paths return a value
-e:\vc program\niuxr_snl\src\dgxj\all.cpp(336) : warning C4715: 'VarDec' : not all control paths return a value
-e:\vc program\niuxr_snl\src\dgxj\all.cpp(377) : warning C4715: 'VarDecMore' : not all control paths return a value
-e:\vc program\niuxr_snl\src\dgxj\all.cpp(409) : warning C4715: 'ProcDec' : not all control paths return a value
-e:\vc program\niuxr_snl\src\dgxj\all.cpp(479) : warning C4715: 'ParamMore' : not all control paths return a value
-e:\vc program\niuxr_snl\src\dgxj\all.cpp(596) : warning C4715: 'Stm' : not all control paths return a value
-e:\vc program\niuxr_snl\src\dgxj\all.cpp(603) : warning C4715: 'AssCall' : not all control paths return a value
-e:\vc program\niuxr_snl\src\dgxj\all.cpp(667) : warning C4715: 'RelExp' : not all control paths return a value
-e:\vc program\niuxr_snl\src\dgxj\all.cpp(766) : warning C4715: 'ActParamList' : not all control paths return a value
-e:\vc program\niuxr_snl\src\dgxj\all.cpp(862) : warning C4715: 'Factor' : not all control paths return a value
-e:\vc program\niuxr_snl\src\dgxj\all.cpp(989) : warning C4715: 'Match' : not all control paths return a value
+main.cpp
 Linking...
-Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13B.tmp" with contents
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP57.tmp" with contents
 [
 /nologo /o"../../bin/dgxj.bsc" 
 "\VC program\NIUXR_SNL\obj\all.sbr"
@@ -54,14 +42,14 @@ Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13B.tmp" with con
 "\VC program\NIUXR_SNL\obj\SNL_Node.sbr"
 "\VC program\NIUXR_SNL\obj\Token.sbr"
 "\VC program\NIUXR_SNL\obj\StdinReader.sbr"]
-Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13B.tmp"
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP57.tmp"
 Creating browse info file...
 <h3>Output Window</h3>
 
 
 
 <h3>Results</h3>
-dgxj.exe - 0 error(s), 12 warning(s)
+dgxj.exe - 0 error(s), 0 warning(s)
 </pre>
 </body>
 </html>

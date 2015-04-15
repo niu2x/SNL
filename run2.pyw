@@ -6,11 +6,12 @@ from tkMessageBox import showerror
 import subprocess	
 import os
 from tkFileDialog import askopenfilename 
+from tkFileDialog import asksaveasfilename 
 class ScrolledText(Frame):
 	def __init__(self, parent=None):
 		Frame.__init__(self, parent)
 		self.pack(expand=YES, fill=BOTH)
-		self.master.title(u"SNL编译器--涵姐出品")
+		self.master.title(u"SNL编译器--琨琨出品")
 		self.master.iconbitmap("./icon/han.ico")
 		self.programText=""
 		self.firstText=""
@@ -27,6 +28,7 @@ class ScrolledText(Frame):
 		toolbar.pack(side=TOP, fill=X)
 		Button(toolbar, text=u"新建", command=self.clear).pack(side=LEFT)
 		Button(toolbar, text=u"打开", command=self.open).pack(side=LEFT)
+		Button(toolbar, text=u"另存为", command=self.saveas).pack(side=LEFT)
 		Button(toolbar, text=u"保存", command=self.save).pack(side=LEFT)
 		Button(toolbar, text=u"源程序", command=self.program).pack(side=LEFT)
 		Button(toolbar, text=u"词法分析", command=self.first).pack(side=LEFT)
@@ -58,7 +60,7 @@ class ScrolledText(Frame):
 		try:
 			lineno = self.currentLineNo.get()
 		except ValueError,e:
-			showerror(title=u"涵姐提示", message=u"行号该是个整数")
+			showerror(title=u"琨琨提示", message=u"行号该是个整数")
 			self.currentLineNo.set(0)
 			return
 		self.text.see("%d.0" % lineno)
@@ -75,6 +77,10 @@ class ScrolledText(Frame):
 		filename = askopenfilename(filetypes=[("SNL源程序", "*.snl")])
 		if filename:
 			self.setText(open(filename, "rb").read())
+	def saveas(self):
+		filename = asksaveasfilename(filetypes=[("SNL源程序", "*.*")])
+		if filename:
+			open(filename, "wt").write(self.getText().encode("utf8"));
 	def getText(self):
 		return self.text.get("1.0", END+'-1c')
 	def save(self):

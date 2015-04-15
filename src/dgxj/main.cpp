@@ -9,6 +9,7 @@ std::vector<Token> tokenList;
 int main()
 {
 	MyString text = StdinReader().read ();
+
 	MyStringList testList = text.split("\n");
 
 	for(MyStringList::iterator it = testList.begin(); it != testList.end(); it++)
@@ -25,6 +26,7 @@ int main()
 	}
 
 	SNL_Node *root = Program();
+
 	print(root);
 	return 0;
 }

@@ -10,7 +10,9 @@ SNL_Node *parseLL();
 int main()
 {
 	MyString text = StdinReader().read ();
+
 	MyStringList testList = text.split("\n");
+
 
 	for(MyStringList::iterator it = testList.begin(); it != testList.end(); it++)
 	{
@@ -25,9 +27,8 @@ int main()
 		}
 	}
 
-//	printf("%s", text.c_str ());
-
 	SNL_Node *root = parseLL();
+
 	print(root);
 	return 0;
 }

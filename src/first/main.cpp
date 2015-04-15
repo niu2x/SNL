@@ -1,6 +1,7 @@
 #include "../MyString/MyString.h"
 #include "../IO/StdinReader.h"
 #include "../snl/token.h"
+
 int main()
 {
 	MyString text = StdinReader().read();
